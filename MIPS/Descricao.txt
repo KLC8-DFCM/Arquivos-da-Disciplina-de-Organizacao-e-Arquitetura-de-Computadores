@@ -1,0 +1,2 @@
+Para esta arquitetura RISC as expectativas e maior simetria de comandos entre as registradoras (além da conveniência do uso do MARS) fora bem mais fluida, com melhor
+proveito das características e, devido à experiência anterior com on 8086, maior gratidão pelas conveniências e intuitividade desta ISA.
