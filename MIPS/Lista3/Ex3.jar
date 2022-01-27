@@ -1,0 +1,30 @@
+#Faça um programa similar ao do exercício 1, porém definindo os valores de dado1 e dado2 como 2
+#valores de Ponto Flutuante (float de precisão simples de 32 bits). Os valores definidos para as
+#variáveis devem ser em Ponto Flutante, dado1 deve valer 12345.12345 e dado2 deve valer
+#11111.22222. Somar em ponto flutuante, salvar o resultado em “soma” (float 32 bits), exibir o
+#resultado na forma de float (atenção use a syscall que exibe um float!) e terminar com “exit”. Observe
+#a precisão/imprecisão da soma de ponto flutuante como esta que foi realizada, e que possui diversas
+#casas antes e depois da vírgula (float de precisão simples)
+
+.data 
+	dado1: .float 12345.12345
+	dado2: .float 11111.22222	
+	soma: .float 0.0
+.text 
+	.globl main
+main:
+	l.s $f0, dado1
+	l.s $f1, dado2
+	add.s $f2, $f1, $f0
+	s.s $f2, soma
+	
+#impressao inteira na tela
+    	l.s $f12,soma
+    	li $v0,2
+    	syscall
+    	
+#sair do programa
+    	li $v0,10
+    	syscall
+    	
+	
