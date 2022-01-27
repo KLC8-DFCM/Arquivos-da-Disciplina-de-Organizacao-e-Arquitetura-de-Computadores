@@ -1,6 +1,0 @@
-Nesta pasta encontram-se os arquivos relativos à availiação e treino com o emulador 8086 em ambiente de windows 10, para a primeira parte da disciplina.
-
-O treino fora particularmente difícil devido à baixa familiaridade com o tipo de programação baixo nível em assembly (claramente) porém principalmente devido 
-à assimetria de comportamento de registradoras, como por exemplo o fato de Ax não ser somente mais uma registradora, mas com comandos automaticamente direcionando
-saídas e pegando entradas somente desta, com comportamentos similares para outras registradoras (DI e SI por exemplo), além da noção de segmentação de memória
-ser confusa nesta arquitetura. 
